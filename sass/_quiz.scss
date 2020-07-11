@@ -1,0 +1,108 @@
+$main-color:#2c2b5e;
+
+*,
+*::after,
+*::before{
+    font-weight:600;
+    
+}
+body{
+    box-sizing:border-box;
+}
+
+input,
+button,
+button:focus{
+    outline:0;
+}
+
+ul{
+    list-style:none;
+}
+
+@mixin btn(){
+    padding:0 20px;
+    height: 35px;
+    line-height: 35px;
+    border-radius:20px;
+    font-weight:600;
+    border: 1px solid $main-color;
+    background: #fff;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    color:$main-color;
+    margin-left: 10px;
+    margin-top: 5px;
+    &:hover{
+        background:$main-color;
+        color:#fff;
+    }
+}
+
+.Question {
+    padding-top: 20px;
+      
+.add-quiz{
+    margin:80px auto;
+    form{
+        text-align: center;
+        padding: 50px;
+        .input-group{
+            input {
+                outline:0;
+                font-weight:600;
+                width: 100%;
+                border: 1px solid $main-color;
+                font-size: 14px;
+                padding-left: 10px;
+                border-radius: 20px;
+                height: 40px;
+            }
+        }
+        ul{
+            margin-top: 10px;
+            padding:0;
+            li {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                margin-top: 10px;
+                .answer-checkbox {
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid $main-color;
+                    background: $main-color;
+                    text-align: center;
+                    line-height:40px;
+                }
+                input {
+                    width: 100%;
+                    border: 1px solid $main-color;
+                    font-size: 14px;
+                    padding-left: 10px;
+                    border-radius: 0 20px 20px 0;
+                }
+
+                button {
+                    @include btn;
+                }
+            }
+        }
+
+        input[type="submit"]{
+            font-weight:600;
+            border:1px solid $main-color;
+            margin-top:20px;
+            border-radius:20px;
+            background:#fff;
+            color:$main-color;
+            &:hover{
+                background:$main-color;
+                color:#fff;
+            }
+        }
+    }
+}
+    
+}

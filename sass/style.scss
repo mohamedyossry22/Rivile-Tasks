@@ -1,0 +1,15 @@
+
+@media (min-width : 992px) {
+
+    .container {
+        max-width: 76%;
+    margin-left: 24%;
+    margin-right: 0;
+    position: relative;
+    }
+}
+
+@import "dashboard";
+@import "quiz";
+@import "final";
+@import "form";

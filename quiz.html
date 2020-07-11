@@ -1,0 +1,63 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="sass/style.css">
+    <title>Question</title>
+  </head>
+  <body>
+    
+
+    <nav>
+      <h3><i class='bx bxs-home-smile'></i><br> Admin</h3>
+      <ul class="menu-list">
+        <li ><a href="index.html"><i class='bx bxs-dashboard'></i> Dashboard</a></li>
+        <li class="active"><a href="quiz.html"><i class='bx bx-question-mark'></i> Questions</a></li>
+        <li><a href="exam.html"><i class='bx bx-question-mark'></i> Final Exam</a></li>
+        <li><a href="dynamic-form.html"><i class='bx bx-table'></i>Dynamic Form</a></li>
+
+      </ul>
+    </nav>
+    <div class="Question">
+
+      <div class="container">
+        <div class="col-md-8 mx-auto text-center">
+            <section class="add-quiz">
+                <form class="form" name="form-add-quiz" action="#">
+                    <div class="input-group">
+                        <input type="text" name="question" placeholder="Type Question Here" required />
+                    </div>
+                    <ul class="multiple-answer">
+
+                        <li class="answer-content">
+                            <div class="answer-checkbox">
+                                <input type="checkbox" name="answer-choice" />
+                            </div>
+                            <input type="text" class="answer-input" name="answer-input" placeholder="Answer Choice" required />
+                            <button class="delete-answer bx bxs-trash d-none"></button>
+                        </li>
+
+                    </ul>
+                    <input type="submit" value="Add Quiz" class="submit-form btn" name="submit-form" />
+                </form>
+            </section>
+        </div>
+    </div>   
+   
+          </div>
+
+          
+<!----------- Java Script Files -------->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+ <script src="js/main.js"></script>
+ 
+</body>
+</html>
+    

@@ -1,0 +1,40 @@
+.final {
+    padding-top:20px ;
+      
+.questions-container{
+    margin:100px auto;
+
+    .question-content{
+        border:1px solid $main-color;
+        border-radius:20px;
+        margin-bottom:20px;
+        overflow:hidden;
+        font-size:14px;
+        .question{
+            padding:20px;
+            background:$main-color;
+            color:#fff;
+        }
+
+        .question-answer{
+            ul{
+                li{
+                    display:inline-block;
+                    margin:10px 5px;
+                    button{
+                        @include btn;
+                        &.success{
+                            background:green;
+                            color:#fff;
+                        }
+                        &.error{
+                            background:red;
+                            color:#fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}

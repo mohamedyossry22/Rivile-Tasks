@@ -1,0 +1,29 @@
+
+.dynamic {
+    
+    #form1 {
+        margin-top: 10%;
+        .row_inputs {
+                display: inline-block;
+                width: 100%;
+            .form-group {
+                margin-bottom: 0;
+                width: 100%;
+                .btn {
+                    height: 30px;
+                    line-height: 15px;
+                    margin-left: 10px;
+                }
+                input {
+                    width: 35%;
+                    display: inline-block;
+                    
+                }
+            } 
+        }
+    }
+    .btn-success {
+        font-weight: 600;
+    
+    }
+}
